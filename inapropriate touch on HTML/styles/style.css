@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.backg{
+    z-index: -1;
+    object-fit: cover;
+    position: fixed;
+}
+
+.numcounter{
+    font-size: 100px;
+    font: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    color: #080692;
+}
+
+.btncontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+    padding-top: 200px;
+}
+
+.btn{
+    background-color: rgba(184, 197, 164, 0.466);
+    color:rgb(0, 0, 0);
+    border: none;
+    font-size:xx-large;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    padding: 3px 4px;
+}
+
+.btn:hover{
+    scale: 1.2;
+}
+
+.boxContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 160px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-image: url('../picture/ghostIcon.png');
+    background-size: cover;
+    background-position: center;
+    animation: triangle 4s linear infinite;
+
+    /* width: 0;
+    height: 0;
+    border-left: 100px solid transparent; 
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid #0806928e; 
+        ეს იყოს დაკომენტარებული რორამე რავი :) სამკუთხედია*/
+}
+
+ @keyframes triangle {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(0deg)
+    }
+    75%{
+        transform: rotate(-90deg);
+    }
+    100%{
+        transform: rotate(0deg)
+    }
+}  
